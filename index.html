@@ -25,13 +25,6 @@
             h2 {
                 font-size: 1.5em;
             }
-            .square-image {
-                width: 300px;
-                height: 300px;
-            }
-            .rect-image {
-                width: 100%;
-            }
             .steps {
                 display: flex;
                 padding-bottom: 2em;
@@ -47,7 +40,7 @@
                 border-bottom: 1px solid #4a5055;
                 border-top: 1px solid #4a5055;
             }
-            @media only screen and (max-width: 600px) {
+            @media (max-width: 600px) {
                 .steps {
                     flex-direction: column;
                 }
@@ -75,7 +68,8 @@
                     src="./images-assets/printer-settings.jpg"
                     alt="shows where to click actual size
                                 when printing"
-                    class="square-image"
+                    width="300px"
+                    height="300px"
                 />
                 <div class="steps-text">
                     <h2>Step 1: Print Out</h2>
@@ -86,7 +80,8 @@
                 <img
                     src="./images-assets/cut-out.jpg"
                     alt="template cutout with scissors"
-                    class="square-image"
+                    width="300px"
+                    height="300px"
                 />
                 <div class="steps-text">
                     <h2>Step 2: Cut it out</h2>
@@ -100,7 +95,8 @@
                 <img
                     src="./images-assets/measure-screw-1.jpg"
                     alt="holding pencil, marking where screws go on cutout template"
-                    class="square-image"
+                    width="300px"
+                    height="300px"
                 />
                 <div class="steps-text">
                     <h2>Step 3: Measure the Screw Holes</h2>
@@ -116,7 +112,8 @@
                 <img
                     src="./images-assets/right-bracket-placing-paper.jpg"
                     alt="Holding template next to window corner on right side"
-                    class="square-image"
+                    width="300px"
+                    height="300px"
                 />
                 <div class="steps-text">
                     <h2>Step 4: Place template on window corner</h2>
@@ -130,7 +127,8 @@
                 <img
                     src="./images-assets/right-bracket-drill.jpg"
                     alt="drilling in screws"
-                    class="square-image"
+                    width="300px"
+                    height="300px"
                 />
                 <div class="steps-text">
                     <h2>Step 5: Drill in screws</h2>
@@ -145,7 +143,8 @@
                 <img
                     src="./images-assets/left-bracket-paper.jpg"
                     alt="paper with holes"
-                    class="square-image"
+                    width="300px"
+                    height="300px"
                 />
                 <div class="steps-text">
                     <h2>Step 6: Flip paper and go to left side</h2>
@@ -163,7 +162,7 @@
                 <img
                     src="./images-assets/bracks-hanging.jpg"
                     alt="brackets hanging on both sides of window"
-                    class="rect-image"
+                    style="width: 100%;"
                 />
             </div>
             <h2>You can download and print the template for just 1$</h2>
@@ -177,11 +176,4 @@
             </div>
         </div>
     </body>
-    <script>
-        var squareImage = document.querySelectorAll('.square-image');
-        for (var i = 0; i < squareImage.length; i++) {
-            squareImage[i].style.width = '301px';
-            squareImage[i].style.height = '301px';
-        }
-    </script>
 </html>
